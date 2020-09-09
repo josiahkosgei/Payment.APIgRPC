@@ -1,0 +1,64 @@
+syntax = "proto3";
+
+option csharp_namespace = "PaymentService";
+
+package Payment;
+
+// The greeting service definition.
+service PaymentService {
+  // Sends a greeting
+  rpc MakePayment (MakePaymentRequest) returns (MakePaymentReply) {}
+  rpc GetPaymentDetails (GetPaymentDetailsRequest) returns (GetPaymentDetailsReply) {}
+}
+
+// The request message containing the user's name.
+message MakePaymentRequest {
+	string trackingId =1;
+	string paymentMethod =2;
+	string paymentStatus =3;
+	string reference =4;
+	string BuyerName=5;
+	string Email=6;
+	string Amount=7;
+	string PhoneNumber=8;
+}
+
+// The response message containing the greetings.
+message MakePaymentReply {
+  string trackingId = 1;
+}
+
+message GetPaymentDetailsRequest {
+  string trackingId =1;
+  string reference =2;
+}
+message GetPaymentDetailsReply {
+	string trackingId = 1;
+	string paymentMethod =2;
+	string paymentStatus =3;
+	string reference = 4;
+}
+
+message LineItem {
+  string Particulars = 1;
+  string UniqueId = 2;
+  int32 Quantity = 3;
+  double UnitCost = 4;
+}
+
+message DirectOrderUrlRequest {
+  string Amount =1;
+  string Description =2;
+  string Type =3;
+  string Reference =4;
+  string Email =5;
+  string FirstName =6;
+  string LastName =7;
+  string PhoneNumber =8;
+  repeated LineItem LineItems=9;
+}
+
+message DirectOrderUrlReply {
+  string trackingId =1;
+  string reference =2;
+}

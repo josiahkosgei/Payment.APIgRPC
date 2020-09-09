@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Payment.APIgRPC", "Payment.APIgRPC\Payment.APIgRPC.csproj", "{30B062B9-801C-48A1-B5DA-A8FF9C325202}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Payment.APIgRPC_Client", "Payment.APIgRPC_Client\Payment.APIgRPC_Client.csproj", "{EED75FBA-8E04-4A0B-9076-2BC4B41D1F25}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{30B062B9-801C-48A1-B5DA-A8FF9C325202}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30B062B9-801C-48A1-B5DA-A8FF9C325202}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30B062B9-801C-48A1-B5DA-A8FF9C325202}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30B062B9-801C-48A1-B5DA-A8FF9C325202}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EED75FBA-8E04-4A0B-9076-2BC4B41D1F25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EED75FBA-8E04-4A0B-9076-2BC4B41D1F25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EED75FBA-8E04-4A0B-9076-2BC4B41D1F25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EED75FBA-8E04-4A0B-9076-2BC4B41D1F25}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EA8802B1-2839-4F83-BF00-FDEAF9D287F4}
+	EndGlobalSection
+EndGlobal
